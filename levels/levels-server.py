@@ -13,7 +13,7 @@ wcans = {}
 
 class CanLevelsHandler:
 	def get_cans_above_threshold(self, percent_full):
-		return ttypes.can_levels(count=2, can_levels=wcans) 
+		return ttypes.can_levels(count=2, can_levels=wcans, date=37465) 
 
 	def update_can_level(self, can_id, percent_full):
 		wcans[can_id] = percent_full

@@ -2,7 +2,8 @@ typedef i64 CanId
 
 struct can_levels {
 	1: i32 count
-	2: map<CanId, double> can_levels 
+	2: map<CanId, double> can_levels
+	3: i64 date 
 }
 service CanLevels {
 	can_levels get_cans_above_threshold(1: double percent_full)
